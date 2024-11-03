@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#FFF3E0"
+    tools:context=".MainActivity">
+
+    <!-- Source Input Field -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="16dp"
+android:gravity="center">
+
+<EditText
+    android:id="@+id/source_text"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:textSize="18sp"
+    android:hint="Source"
+    android:padding="10dp"
+    android:background="#FFCC80"
+android:textColor="#BF360C"
+android:hintTextColor="#FFAB91"
+android:layout_marginBottom="10dp"/>
+</LinearLayout>
+
+    <!-- Destination Input Field -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="16dp"
+android:gravity="center">
+
+<EditText
+    android:id="@+id/destination_text"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:textSize="18sp"
+    android:hint="Destination"
+    android:padding="10dp"
+    android:background="#FFECB3"
+android:textColor="#E65100"
+android:hintTextColor="#FFD54F"
+android:layout_marginBottom="10dp"/>
+</LinearLayout>
+
+    <!-- Date Picker -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center"
+android:padding="10dp"
+android:layout_marginBottom="10dp">
+
+<Button
+    android:id="@+id/date_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pick Date"
+    android:textColor="#FFFFFF"
+    android:padding="10dp"
+    android:background="#D84315"
+android:layout_marginRight="10dp"/>
+
+<TextView
+    android:id="@+id/date_text"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textColor="#4E342E"
+    android:gravity="center_vertical"/>
+</LinearLayout>
+
+    <!-- Time Picker -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center"
+android:padding="10dp"
+android:layout_marginBottom="10dp">
+
+<Button
+    android:id="@+id/time_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pick Time"
+    android:textColor="#FFFFFF"
+    android:padding="10dp"
+    android:background="#F4511E"
+android:layout_marginRight="10dp"/>
+
+<TextView
+    android:id="@+id/time_text"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textColor="#4E342E"
+    android:gravity="center_vertical"/>
+</LinearLayout>
+
+    <!-- Single Lady and AC Toggle Options -->
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="10dp"
+android:layout_marginBottom="20dp">
+
+<androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/singlelady_switch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Single Lady"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:textColor="#F9A825"
+    android:layout_marginRight="20dp"/>
+
+<ToggleButton
+    android:id="@+id/ac_toggle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textOff="Non AC"
+    android:textOn="AC"
+    android:background="#FFE082"
+    android:textColor="#FFFFFF"/>
+</LinearLayout>
+
+    <!-- Book Ticket Button -->
+<Button
+android:id="@+id/bookTicket_button"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Book Ticket"
+android:textColor="#FFFFFF"
+android:padding="12dp"
+android:background="#FF6F00"/>
+    </LinearLayout>
